@@ -4,7 +4,7 @@ description = backend service
 [service]
 user=expense
 environment=DB_HOST="mysql-dev.bdevops55.online"
-execstart=/bin/node /app/index.js
+execstart=/bin/node/app/index.js
 syslogidentifier=backend
 
 [install]
