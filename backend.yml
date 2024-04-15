@@ -50,11 +50,6 @@
           - cryptography
         executable: pip3.9
 
-    - name: install python MySQL client
-      ansible.builtin.pip:
-        name: PyMySQL
-        executable: pip3.9
-
     - name: load schema
       community.mysql.mysql_db:
         state: import
