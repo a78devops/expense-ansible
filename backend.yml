@@ -43,10 +43,17 @@
          src: backend.service
          dest: /etc/systemd/system/backend.service
 
-    - name: install MySQL client
-      ansible.builtin.dnf:
-        name: mysql
-        state: installed
+    - name: install python MySQL client
+      ansible.builtin.pip:
+        name:
+          - PyMySQL
+          - cryptography
+        executable: pip3.9
+
+    - name: install python MySQL client
+      ansible.builtin.pip:
+        name: PyMySQL
+        executable: pip3.9
 
     - name: load schema
       community.mysql.mysql_db:
