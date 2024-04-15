@@ -43,7 +43,7 @@
          src: backend.service
          dest: /etc/systemd/system/backend.service
 
-    - name: install mysql client
+    - name: install MySQL client
       ansible.builtin.dnf:
         name: mysql
         state: installed
