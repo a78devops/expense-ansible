@@ -1,11 +1,11 @@
-[unit]
-description = backend service
+[Unit]
+Description = Backend Service
 
-[service]
-user=expense
-environment=DB_HOST="mysql-dev.bdevops55.online"
-execstart=/bin/node /app/index.js
-syslogidentifier=backend
+[Service]
+User=expense
+Environment=DB_HOST="mysql-dev.bdevops55.online"
+ExecStart=/bin/node /app/index.js
+SyslogIdentifier=backend
 
-[install]
-wantedby=multi-user.target
+[Install]
+WantedBy=multi-user.target
