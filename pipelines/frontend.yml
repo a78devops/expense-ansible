@@ -11,6 +11,8 @@ pipelines:
     stages:
     - dev:
         fetch_materials: true
+        enviroment_variables:
+          env: dev
         approval:
           type: manual
         jobs:
