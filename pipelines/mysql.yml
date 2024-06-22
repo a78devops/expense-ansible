@@ -9,7 +9,7 @@ pipelines:
         auto_update: true
         branch: main
     secure_variables:
-      vault_token: AES:jSwi//hkavP/9+1oPVET8A==:84UyWfMFnz4ODf1l2oHSgoIcQvzAEBVFz99Zp9sZyRs=
+     vault_token: AES:jSwi//hkavP/9+1oPVET8A==:84UyWfMFnz4ODf1l2oHSgoIcQvzAEBVFz99Zp9sZyRs=
     stages:
     - dev:
         fetch_materials: true
