@@ -6,7 +6,3 @@
     name: prometheus
     tasks_from: node_exporter
 
-- name: install logstash
-  ansible.builtin.import_role:
-    name: logstash
-
